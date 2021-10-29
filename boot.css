@@ -23,6 +23,10 @@ html {
   flex-direction: right;
 }
 
+#gallery{
+  margin-right: 25px;
+}
+
 .home {
   background-image: url(https://source.unsplash.com/user/erondu/1600x900);
   width: 100%;

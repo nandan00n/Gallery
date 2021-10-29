@@ -12,6 +12,15 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <style>
+        .d-flex:hover{
+            color: #0082ca;
+        }
+
+        .wel a:hover{
+            color: #0082ca;
+        }
+    </style>
 </head>
 
 <body>
@@ -36,19 +45,23 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact Us</a>
                     </li>
-                    <div class="navbar-nav me-auto mb-1 mb-lg-0 ms-1 fw-bold">
+                    <!-- <div class="navbar-nav me-auto mb-1 mb-lg-0 ms-1 fw-bold">
                         <form class="d-flex ">
                             <a href="./login.html" class="btn btn-outline-success fw-bold" type="submit">Login</a>
-
+                                
                         </form>
                         <form class="d-flex ms-3 ">
                             <a href="./Register.html" class="btn btn-outline-success fw-bold" type="submit">Register</a> 
                         </form>
-                    </div>
+                    </div> -->
+                    
                 </ul>
-                <form class="d-flex">
+                <form class="d-flex wel">
+                     <i class="fas fa-user-alt fa-sm fw-bold d-flex col-1 " style="margin-top: 10px;"></i>
+                   <a href="./profile.html" class="text-sm fw-bold mt-2 me-2 d-flex  text-primary  col-4 h6 pe-auto" style="cursor:pointer;">Welcome Nandan</a>
                     <input class="form-control me-2 fw-bold" type="search" placeholder="Search" aria-label="Search" />
-                  <a href="https://unsplash.com/s/photos/nature" target="_blank" class="btn btn-outline-success fw-bold" type="submit">
+
+                    <a href="https://unsplash.com/s/photos/nature" target="_blank" class="btn btn-outline-success fw-bold" type="submit">
                         Search
                     </a>
                 </form>
@@ -62,8 +75,8 @@
     </section>
     <section>
         <!-- Gallery -->
-        <div class="row mt-4 me-2" id="gallery">
-            <div class="col-lg-4 col-md-12 ms-2 mb-4 mb-lg-0">
+        <div class="row mt-4 me-2 me-2" id="gallery">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
                 <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg"
                     class="w-100 shadow-1-strong rounded mb-4" alt="" />
 
@@ -281,5 +294,4 @@
         </footer>
     </section>
 </body>
-
 </html>
