@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="./img/favicon.png" alt="" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
@@ -58,7 +58,7 @@
                 </ul>
                 <form class="d-flex wel">
                      <i class="fas fa-user-alt fa-sm fw-bold d-flex col-1 " style="margin-top: 10px;"></i>
-                   <a href="./profile.html" class="text-sm fw-bold mt-2 me-2 d-flex  text-primary  col-4 h6 pe-auto" style="cursor:pointer;">Welcome Nandan</a>
+                   <a href="./profile.html"  class="text-sm fw-bold mt-2 me-2 d-flex  text-primary  col-4 h6 pe-auto" style="cursor:pointer;">Welcome Nandan</a>
                     <input class="form-control me-2 fw-bold" type="search" placeholder="Search" aria-label="Search" />
 
                     <a href="https://unsplash.com/s/photos/nature" target="_blank" class="btn btn-outline-success fw-bold" type="submit">
@@ -75,59 +75,43 @@
     </section>
     <section>
         <!-- Gallery -->
-        <div class="row mt-4 me-2 me-2" id="gallery">
-            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="" />
-
-                <img src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="" />
-            </div>
-
-            <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="gallery">
+                <div class="col-1 mt-4 mx-auto underline text-black"><h1>Gallery</h1></div>
+            <div class="row mt-4 me-2 ms-2" id="gallery">
+                <div class="col-lg-4 col-md-12 ms- mb-4 mb-lg-0">
+                    <a href="https://unsplash.com/s/photos/nature" target="blank"> 
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg"
+                    class="w-100 shadow-1-strong rounded mb-4" alt="" /></a>
+                        <a href="https://unsplash.com/s/photos/nature" target="blank"> 
+                    <img src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4" alt="" /></a>
+                </div>
+                
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <a href="https://unsplash.com/s/photos/nature" target="blank">
                 <img src="https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="" />
-
+                class="w-100 shadow-1-strong rounded mb-4" alt="" /></a>
+                <a href="https://unsplash.com/s/photos/nature" target="blank">
                 <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="" />
+                class="w-100 shadow-1-strong rounded mb-4" alt="" /></a>
             </div>
 
             <div class="col-lg-4 mb-4 mb-lg-0">
                 <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="" />
-
+                class="w-100 shadow-1-strong rounded mb-4" alt="" />
+                
                 <img src="https://mdbootstrap.com/img/Photos/Vertical/mountain3.jpg"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="" />
+                class="w-100 shadow-1-strong rounded mb-4" alt="" />
             </div>
         </div>
+    </div>
         <!-- Gallery -->
     </section>
-    <section class="video d-flex col-6 mx-auto mb-3" id="new">
+    <div class="col-2 mt-3 mx-auto underline text-black"><h1>New-Arrivals</h1></div>
+    <section class="video d-flex mt-4 col-9 mx-auto mb-3" id="new">
         <!-- Carousel wrapper -->
         <div id="carouselVideoExample" class="carousel slide carousel-fade " data-mdb-ride="carousel">
             <!-- Indicators -->
-            <!-- <div class="carousel-indicators">
-    <button
-      type="button"
-      data-mdb-target="#carouselVideoExample"
-      data-mdb-slide-to="0"
-      class="active"
-      aria-current="true"
-      aria-label="Slide 1"
-    ></button>
-    <button
-      type="button"
-      data-mdb-target="#carouselVideoExample"
-      data-mdb-slide-to="1"
-      aria-label="Slide 2"
-    ></button>
-    <button
-      type="button"
-      data-mdb-target="#carouselVideoExample"
-      data-mdb-slide-to="2"
-      aria-label="Slide 3"
-    ></button>
-  </div> -->
 
             <!-- Inner -->
             <div class="carousel-inner rounded">
@@ -136,25 +120,20 @@
                     <video class="img-fluid" autoplay loop muted>
                         <source src="https://mdbootstrap.com/img/video/forest.mp4   " type="video/mp4" />
                     </video>
-                    <div class="carousel-caption d-none d-md-block">
-                        <!-- <h5>First slide label</h5>
-        <p>
-          Nulla vitae elit libero, a pharetra augue mollis interdum.
-        </p> -->
-                    </div>
-                </div>
+                    <!-- <div class="carousel-caption d-none d-md-block">
+                         <h5>First slide label</h5>
+                    </div> -->
+                 </div> 
 
                 <!-- Single item -->
                 <div class="carousel-item">
                     <video class="img-fluid" autoplay loop muted>
                         <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" />
                     </video>
-                    <div class="carousel-caption d-none d-md-block">
+                    <!-- <div class="carousel-caption d-none d-md-block"> -->
                         <!-- <h5>Second slide label</h5>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p> -->
-                    </div>
+                
+                    <!-- </div> -->
                 </div>
 
                 <!-- Single item -->
@@ -162,12 +141,9 @@
                     <video class="img-fluid" autoplay loop muted>
                         <source src="https://mdbootstrap.com/img/video/Agua-natural.mp4" type="video/mp4" />
                     </video>
-                    <div class="carousel-caption d-none d-md-block">
-                        <!-- <h5>Third slide label</h5>
-        <p>
-          Praesent commodo cursus magna, vel scelerisque nisl consectetur. -->
-                        </p>
-                    </div>
+                    <!-- <div class="carousel-caption d-none d-md-block"> -->
+                         <!-- <h5>Third slide label</h5> -->
+                    <!-- </div> -->
                 </div>
             </div>
             <!-- Inner -->
@@ -187,12 +163,14 @@
         <!-- Carousel wrapper -->
     </section>
     <section>
+        <div class="col-1 mt-2 mx-auto underline fw-bold text-black "><h1>Explore</h1></div>
         <footer class="text-center text-white bg-light text-center text-white" id="contact"
             style="background-color: #caced1;">
             <!-- Grid container -->
             <div class="container p-4">
                 <!-- Section: Images -->
                 <section class="">
+                    
                     <div class="row">
                         <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
                             <div class="bg-image hover-overlay ripple shadow-1-strong rounded"
@@ -288,10 +266,21 @@
             <!-- Copyright -->
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
                 © 2020 Copyright:
-                <a class="text-white" href="https://mdbootstrap.com/">nandan-kumar.netlify.app</a>
+                <a class="text-white" href="https://nandan-kumar.netlify.app" target="blank">nandan-kumar.netlify.app</a>
             </div>
             <!-- Copyright -->
         </footer>
     </section>
+    <!-- Start of ChatBot (www.chatbot.com) code -->
+<script type="text/javascript">
+    window.__be = window.__be || {};
+    window.__be.id = "617cf28ec8b56e00074bb742";
+    (function() {
+        var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+        be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+    })();
+</script>
+<!-- End of ChatBot code -->
 </body>
 </html>
